@@ -396,7 +396,8 @@ section img {
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "headWrapper workSection playSection studySection" "headWrapper exerciseSection socialSection selfcareSection";
+        grid-template-areas: "headWrapper workSection playSection studySection"
+ "headWrapper exerciseSection socialSection selfcareSection";
     gap: 1rem;
   }
   .headWrapper {
@@ -444,7 +445,7 @@ section img {
     gap: 1rem;
     padding: 1.5rem 1rem;
   }
-  #cards {
+  .cards {
     padding: 1.5rem 1rem;
   }
   .duration {

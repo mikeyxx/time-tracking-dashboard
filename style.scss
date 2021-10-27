@@ -1,0 +1,447 @@
+$Lighter-red: hsl(15, 100%, 70%);       //work
+$Soft-blue: hsl(195, 74%, 62%);         //play
+$Light-red: hsl(348, 100%, 68%);        //study
+$Lime-green: hsl(145, 58%, 55%);        //exercise
+$Violet: hsl(264, 64%, 52%);            //social
+$Soft-orange: hsl(43, 84%, 65%);        //self care
+$Very-dark-blue: hsl(226, 43%, 10%);
+$Dark-blue: hsl(235, 46%, 20%);
+$Desaturated-blue: hsl(235, 45%, 61%);
+$Pale-Blue: hsl(240, 64%, 58%);
+$cardtitlefont: 12px;
+$currentTimeFont: 24px;
+$previousTimeFont: 10px;
+$fontColor: white;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background: $Very-dark-blue;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    color: $fontColor;
+    text-align: center;
+}
+
+.pageWrapper {
+    max-width: 375px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+    font-size: 12px;
+    color: $Desaturated-blue;
+    cursor: pointer;
+}
+
+li:hover {
+    color: white;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: $cardtitlefont;
+}
+
+.sr-only {
+    border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important; 
+}
+
+.headWrapper img {
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.current {
+    font-size: 23px;
+}
+
+.profileName p {
+    font-size: $previousTimeFont;
+}
+
+.profileName {
+    padding-top: 6px;
+    text-align: left;
+    h2 {
+    font-size: 18px;
+    }
+}
+
+div p:nth-child(2) {
+    margin-block-start: 9px;
+    font-size: $previousTimeFont;
+    color: $Desaturated-blue;
+}
+
+.headWrapper {
+    height: 100%;
+    background-color: $Dark-blue;
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    gap: 2rem;
+    // height: 100%;
+    background-color: $Pale-Blue;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.menuList {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+#weeklyTrack {
+    color: $fontColor;
+}
+
+.work {
+    display: flex;
+    justify-content: space-between;
+}
+
+.duration {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 5px;
+}
+
+.play {
+    display: flex;
+    justify-content: space-between;
+}
+
+.study {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exercise {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selfcare {
+    display: flex;
+    justify-content: space-between;
+}
+
+.workSection {
+    height: 100%;
+    background-color: $Lighter-red;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+    background-position-y: -35%;
+}
+
+.workHours {
+    // height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: $Dark-blue;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.playSection {
+    height: 100%;
+    background-color: $Soft-blue;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(/images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+    background-position-y: -35%;
+}
+
+.playHours {
+    // height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: $Dark-blue;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.studySection {
+    height: 100%;
+    background-color: $Light-red;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(/images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+    background-position-y: -35%;
+}
+
+.studyHours {
+    // height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: $Dark-blue;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.exerciseSection {
+    height: 100%;
+    background-color: $Lime-green;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(/images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+    background-position-y: -7%;
+}
+
+.exerciseHours {
+    // height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: $Dark-blue;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.socialSection {
+    height: 100%;
+    background-color: $Violet;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(/images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+    background-position-y: -75%;
+}
+
+.socialHours {
+    // height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: $Dark-blue;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.selfcareSection {
+    height: 100%;
+    background-color: $Soft-orange;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(/images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+    background-position-y: -35%;
+}
+
+.selfcareHours {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: $Dark-blue;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+section img {
+    width: 15px;
+    height: 3px;
+}
+
+.headWrapper {
+    grid-area: headWrapper;
+}
+.workSection {
+    grid-area: workSection;
+}
+.playSection {
+    grid-area: playSection;
+}
+.studySection {
+    grid-area: studySection;
+}
+.exerciseSection {
+    grid-area: exerciseSection;
+}
+.socialSection {
+    grid-area: socialSection;
+}
+.selfcareSection {
+    grid-area: selfcareSection;
+}
+
+
+@media (min-width: 460px) {
+    body {
+        text-align: start;
+        // font-weight: 400;
+        font-family: "Rubik", sans-serif;
+    }
+    .pageWrapper {
+        max-width: 1200px;
+        margin: 7rem auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "headWrapper workSection playSection studySection"
+        "headWrapper exerciseSection socialSection selfcareSection";
+        gap: 1rem;
+    }
+
+
+    .headWrapper {
+        height: 100%;
+        background-color: $Dark-blue;
+        border-radius: 10px;
+        
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    .headWrapper img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .profileName h2 {
+        font-size: 2.5rem;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    section h2 {
+        margin-bottom: 2rem;
+        font-size: 16px;
+    }
+
+    .menuList {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+    #cards {
+        padding: 1.5rem 1rem;
+    }
+
+    .duration {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .current {
+        font-size: 2.5rem;
+    }
+
+    .workSection {
+        background-position-x: 95%;
+        background-position-y: -10%;
+    }
+    
+    .playSection {
+        background-position-x: 95%;
+        background-position-y: -10%;
+    }
+    
+    .studySection {
+        background-position-x: 95%;
+        background-position-y: -10%;
+    }
+    
+    .exerciseSection {
+        background-position-x: 95%;
+        background-position-y: -1%;
+    }
+    
+    .socialSection {
+        background-position-x: 95%;
+        background-position-y: -7%;
+    }
+    
+    .selfcareSection {
+        background-position-x: 95%;
+        background-position-y: -10%;
+    }
+
+    div p:nth-child(2) {
+        font-size: 12px;
+        color: $Desaturated-blue;
+    }
+    
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.attribution a { color: hsl(228, 45%, 44%); }

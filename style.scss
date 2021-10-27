@@ -342,7 +342,7 @@ section img {
         grid-template-areas: 
         "headWrapper workSection playSection studySection"
         "headWrapper exerciseSection socialSection selfcareSection";
-        gap: 1rem;
+        gap: 1.2rem;
     }
 
 
@@ -387,7 +387,7 @@ section img {
         padding: 1.5rem 1rem;
     }
 
-    #cards {
+    .cards {
         padding: 1.5rem 1rem;
     }
 

@@ -398,7 +398,7 @@ section img {
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "headWrapper workSection playSection studySection"
  "headWrapper exerciseSection socialSection selfcareSection";
-    gap: 1rem;
+    gap: 1.2rem;
   }
   .headWrapper {
     height: 100%;
